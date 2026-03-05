@@ -10,5 +10,7 @@ pool:
   name: JavaAgentPool
 
 steps:
-- script: mvn clean install
+- task: CmdLine@2
+  inputs:
+    script: 'mvn clean install'
   displayName: 'Build Maven Project'
