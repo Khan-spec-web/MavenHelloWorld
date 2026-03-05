@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: JavaAgentPool
+  name: JavaAgentPool
 
 steps:
 - script: mvn clean install
